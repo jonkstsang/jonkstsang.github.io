@@ -12,7 +12,7 @@ h2, h3 {
 }
 
 .couple {
-    
+    width: max-content;
 }
 .tree ul {
   padding-top: 20px;
@@ -31,7 +31,8 @@ h2, h3 {
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
-  vertical-align: top
+  vertical-align: top;
+
 }
 /*We will use ::before and ::after to draw the connectors*/
 .tree li:before, .tree li:after {
@@ -98,6 +99,7 @@ right connector from last child*/
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
+  width: max-content;
 }
 
 
@@ -107,7 +109,7 @@ right connector from last child*/
 .tree li a:hover, .tree li a:hover+ul li a {
   background: #c8e4f8;
   color: #000;
-  border: 1px solid #94a0b4;
+  border: 2px solid #94a0b4;
 }
 /*Connector styles on hover*/
 .tree li a:hover+ul li::after, .tree li a:hover+ul li::before, .tree li a:hover+ul::before, .tree li a:hover+ul ul::before {
